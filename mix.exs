@@ -1,4 +1,4 @@
-defmodule NervesSystemNanopiNeo.Mixfile do
+defmodule NervesSystemNanopiAir.Mixfile do
   use Mix.Project
 
   @version Path.join(__DIR__, "VERSION")
@@ -29,17 +29,17 @@ defmodule NervesSystemNanopiNeo.Mixfile do
 
   defp description do
     """
-    Nerves System - NanoPi NEO
+    Nerves System - NanoPi Air
     """
   end
 
   defp package do
-    [maintainers: ["David Hanson"],
+    [maintainers: ["Stefan Sachse"],
      files: ["rootfs-additions", "busybox_defconfig", "LICENSE",
              "mix.exs", "nerves_defconfig", "nerves.exs", "README.md",
              "VERSION", "fwup.conf", "post-createfs.sh", "uboot",
              "uboot-script.cmd", "linux"],
      licenses: ["Apache 2.0"],
-     links: %{"Github" => "https://github.com/dhanson358/nerves_system_nanopi_neo"}]
+     links: %{"Github" => "https://github.com/ssachse/nerves_system_nanopi_air"}]
   end
 end
